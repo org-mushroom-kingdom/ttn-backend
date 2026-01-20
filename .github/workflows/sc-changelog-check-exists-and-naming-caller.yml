@@ -1,0 +1,19 @@
+name: Backend Changelog Check (Exists/Naming)
+
+on:
+    workflow_dispatch:
+    
+    pull_request:
+        branches: 
+            - preprod
+            - main
+
+jobs:
+    changelog-check:
+        if: ${{ startsWith(github.head_ref, 'release')}}
+        name: 'Call changelog-check reusable workflow'
+        uses: org-mushroom-kingdom/ttn-workflows/.github/workflows/changelog-quality-checks.yml@main
+        secrets:
+            # This token is needed to checkout the ttn-workflows repo. GITHUB_TOKEN is scoped to the repository the workflow is in, so it won't work.
+            token: ${{ secrets.ONLY_REPO_TTN }}
+        
