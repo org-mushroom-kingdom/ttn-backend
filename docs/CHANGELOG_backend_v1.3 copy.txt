@@ -1,4 +1,4 @@
-CHANGELOG_backend_v1.3.txt COPY! THIS IS EVIL!
+CHANGELOG_backend_v1.3.txt COPY! THIS IS EVIL! (Because it's improperly named AND is another CHANGELOG file)
 
 An example CHANGELOG file. This name of this CHANGELOG will be correct if:
 - The source branch name is release/v1.3
