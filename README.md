@@ -26,9 +26,9 @@ It's part of a greater example of how to checkout the reusable workflow's reposi
 
 ### Triggers
 
-workflow_dispatch: This workflow can be triggered manually. TODO SEE MANUAL TESTING?
+`workflow_dispatch`: This workflow can be triggered manually. TODO SEE MANUAL TESTING?
 
-pull_request: Triggered by a pull request being opened, synchronized, or reopened. This is <strong>in conjunction</strong> with the branches key
+`pull_request`: Triggered by a pull request being opened, synchronized, or reopened. This is <strong>in conjunction</strong> with the branches key
 branches: preprod, main (only merges to these  branches will trigger the workflow in this way)
 
 Note: While this workflow will activate upon a proper pull_request/branches combo, it should be noted that the workflow will only perform actual work if the source branch is a release branch (begins with 'release'). Otherwise, all logic will be skipped.
