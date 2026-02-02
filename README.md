@@ -8,7 +8,7 @@ This repo's true purpose is to show how a reusable workflows (located in ttn-wor
 
 This section describes the workflows used in this repository. Note several of these are caller workflows; the brunt of business logic may be in the reusable workflow called. These reusable workflows are located in the org-mushroom-kingdom/ttn-workflows repo TO DO LINK unless otherwise noted.
 
-## sc-changelog-check-exists-and-naming-caller.yml (Frontend Changelog Check (Exists/Naming))
+## sc-changelog-check-exists-and-naming-caller.yml (Backend Changelog Check (Exists/Naming))
 
 Name: Backend Changelog Check (Exists/Naming)
 Filename: `sc-changelog-check-exists-and-naming-caller.yml`
